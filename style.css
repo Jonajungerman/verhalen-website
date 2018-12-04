@@ -1,0 +1,184 @@
+* {
+    font-family: Museo Sans, sans-serif;
+}
+
+/* header */
+#home {
+    width: 5.2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4.5em;
+}
+
+hr {
+    border: 0.03rem solid #A6C4C4;
+    width: 96%;
+    margin-top: -1em;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+nav ul li a img {
+    width: 1em;
+    height: 1em;
+    padding: 0.5em 0.8em;
+    border: 0.1em solid #99258E;
+    border-radius: 0.3rem;
+    margin: 0.3rem;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    top: 0em;
+    right: 0em;
+    left: 0em;
+    padding-bottom: 1em;
+    padding-top: 0.2em;
+}
+
+
+/* formulier */
+form {
+    background-color: #FAFAFA;
+    border: 0.2rem solid #EEEEEE;
+    margin: 7em 2% 3em 2%;
+}
+
+legend {
+    display: block;
+    font-size: 1.6em;
+    font-weight: 300;
+    color: white;
+    padding: 0.6em;
+    background-color: #99258E;
+    margin: 0.3em;
+}
+
+legend > img {
+    width: 0.9em;
+    margin-left: 0.4rem;
+    margin-right: 1rem;
+}
+
+select {
+    margin: 0.5rem 6%;
+    width: 88%;
+    height: 4rem;
+    border: 0.2rem solid #EEEEEE;
+    background-color: white;
+    color: #445757;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+    max-width: 50rem;
+}
+
+#leesduur {
+    width: 40%;
+    height: 4rem;
+    margin: 2rem 0 2rem 6%;
+    max-width: 18rem;
+}
+
+#zoeken {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    background-color: #808080;
+    color: white;
+    border: 0.2rem solid #808080;
+    border-radius: 0.3rem;
+    margin: 0 1rem 0 5.5rem;
+    padding: 0.6rem 0.9rem;
+    padding-bottom: 0.9rem;
+
+}
+
+
+/* verras me */
+section > a {
+    display: block;
+    margin: 0 auto 4rem auto;
+    width: 50%;
+    background-color: #99258E;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+
+/* Aanbevolen verhalen */
+h2 {
+    text-align: center;
+    color: #445757;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+article {
+    display: inline-block;
+    background-color: #FFDE5E;
+    width: 14rem;
+    height: 13rem;
+    padding-left: 1.5rem;
+    margin: ;
+
+}
+
+article > img {
+    width: 15.5rem;
+    margin-left: -1.5rem;
+}
+
+article > ul {
+    margin-left: -2.5rem;
+    text-align: left
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+p {
+    text-align: left;
+    font-size: 1rem;
+
+}
+
+.schrijver {
+    margin: -1.7rem 0 0.5rem;
+}
+
+.checked {
+    color: #99258E;
+}
+
+#artikelen {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/*
