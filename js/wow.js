@@ -2,24 +2,39 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-// zet de items in een array
+// Sterrenbeoordeling
+var img = document.querySelector('#leeg');
 
-
-/*
-for (i = 0; i < sterArray.length; i++) {
-    sterArray[i].classList.add('before');
+function changeImg() {
+   img.src = '../images/gevuld.png';
 }
 
-function veranderClass(){
-    this.classList.toggle('before');
-    this.previousElementSibling.classList.toggle('after');
+img.addEventListener('click', changeImg);
+
+
+// Foto1
+var beroemd = document.querySelector('#foto1');
+
+function draaiOm() {
+   beroemd.src = '../images/omgekeerd.png';
 }
 
-for (i = 0; i < sterArray.length; i++) {
-    sterArray[i].addEventListener('click', veranderClass);
+beroemd.addEventListener('click', draaiOm);
+
+// Foto2
+var beroemd2 = document.querySelector('#foto2');
+
+function draaiOm2() {
+   beroemd2.src = '../images/omgekeerd2.png';
 }
 
-*/
+beroemd2.addEventListener('click', draaiOm2);
 
+// Foto3
+var beroemd3 = document.querySelector('#foto3');
 
+function draaiOm3() {
+   beroemd3.src = '../images/omgekeerd3.png';
+}
 
+beroemd3.addEventListener('click', draaiOm3);
