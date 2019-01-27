@@ -53,34 +53,51 @@ header {
 
 img#achtergrond {
     width: 100%;
-    margin-top: -100em;
-
+    max-height: 15em;
 }
 
-body > p {
+img#achtergrond2 {
+    width: 100%;
+    min-height: 25em;
+}
+
+p.tekst {
     text-align: center;
-    font-size: 1em;
-    color: #445757;
+    color: white;
     max-width: 20em;
-    margin: auto;
+    margin: 0 auto;
+}
+
+section#tekst {
+    margin-top: 5em;
+    min-height: 15em;
 }
 
 p#tekst1 {
-    margin-top: 6em;
+    margin-top: -8em;
     text-align: center;
+    color: #FFDE5E;
+    font-weight: 900;
+    font-size: 1.4em;
 }
 
 p#tekst2 {
     margin-top: 1em;
-    font-size: 1.1em;
+    font-size: 1em;
 }
+
+p#tekst3 {
+    margin-top: 1em;
+    font-size: 1em;
+    color: #FFDE5E;
+}
+
 
 /* formulier */
 form {
     background-color: #FAFAFA;
     border: 0.2rem solid #EEEEEE;
-    margin: 2em auto 3em auto;
-    max-width: 51em;
+    margin: 1em auto 3em auto;
 }
 
 legend {
@@ -127,7 +144,7 @@ button#zoeken {
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 500;
-    background-color: #808080;
+    background-color: #99258E;
     color: white;
     border-radius: 0.1rem;
     text-align: center;
@@ -138,12 +155,12 @@ button a {
 }
 
 button#verrasme {
+    color: black;
     height: 3rem;
     display: block;
     text-transform: uppercase;
     margin: -0.5em auto 0.8rem auto;
-    background-color: #99258E;
-    color: white;
+    background-color: #FFDE5E;
     text-align: center;
     font-size: 1.1em;
     font-weight: 500;
@@ -195,8 +212,10 @@ fieldset#leesduur {
 }
 
 
-input[type=checkbox]:checked + label {
-    background-color: aqua;
+input[type=checkbox]:checked + label,
+input[type=checkbox]:hover + label{
+    background-color: #99258E;
+    color: white;
 }
 
 
@@ -217,6 +236,11 @@ section > a {
     padding-left: 1rem;
     text-decoration: none;
     color: black;
+}
+
+section > a:hover {
+    background-color: white;
+    border: 0.1px solid black;
 }
 
 section > a > img {
@@ -245,9 +269,8 @@ li.checked {
     color: #99258E;
 }
 
-section {
-    margin-left: auto;
-    margin-right: auto;
+section#artikelen {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -276,6 +299,8 @@ input[type=radio]:checked + label {
     border-radius: 0.5em;
 }
 
+
+
 legend {
     text-transform: uppercase;
     text-align: left;
@@ -286,35 +311,39 @@ legend {
 /* VERHAAL */
 
 img#boekverhaal {
-    margin: 6em 0 -0.7em 0.8rem;
+    margin: 6em 0 -0.7em 4%;
     width: 1.3em;
 }
 
 h2#titel {
     text-align: left;
-    margin-left: 0.8rem;
+    margin-left: 4%;
 }
 
 p#info {
     text-align: left;
     margin: -0.7em 0.8em;
+    margin-left: 4%;
 
 }
 
 img.beroemd {
-    width: 96%;
+    width: 90%;
     display: block;
     margin: 4em auto;
 }
 
-body > img:nth-last-of-type(1) {
-    margin-top: -6em;
+img#leeg {
+    width: 15em;
+    display: block;
+    margin: 0 auto;
 }
 
 body > nav > ul > li {
     display: flex;
     justify-content: flex-end;
-    margin-top: -7em
+    margin-top: -7em;
+    margin-right: 2%;
 }
 
 body > nav > ul > li > a > img {
@@ -326,20 +355,15 @@ body > nav > ul > li > a > img {
     margin: 0.3em 0.3em 0.5em;
 }
 
-body > ul > li {
-    font-size: 200%;
-    display: inline-block;
-    margin: 0.5rem;
+img#download:hover, img#download:active  {
+    background-color: #99258E;
 }
 
-
-ul#stars {
-    display: flex;
-    justify-content: center;
-    margin-left: -3em;
+img#favo:hover {
+    background-color: #FFDE5E;
 }
 
-body > button {
+button {
     height: 3rem;
     display: block;
     text-transform: uppercase;
@@ -403,51 +427,75 @@ section#favoriet {
     margin-left: 2%;
 }
 
+/* OFFLINE */
+
+p#tekst4 {
+    margin: -8em auto 0;
+    text-align: center;
+    color: #FFDE5E;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+p#tekst5 {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+p#tekst6 {
+    margin-top: 1em;
+    font-size: 1em;
+    color: #FFDE5E;
+}
+
+p#offlinetekst {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 2em auto;
+    max-width: 30em;
+    color: #445757;
+}
+
+button#downloads {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    height: 3rem;
+    width: 10em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #99258E;
+    color: white;
+    border-radius: 0.1rem;
+    text-align: center;
+}
+
 
 
 /* RESPONSIVE */
 
-@media (min-width: 40rem) {
-    img#achtergrond {
-        margin-top: 6em;
-    }
-
-    img.beroemd {
-        max-width: 70%;
-    }
-
+@media (max-width: 25rem) {
     p#tekst1 {
-        margin-top: -7em;
-        color: white;
-        font-size: 120%;
+        font-size: 80%;
+        margin-top: -52%;
     }
-
     p#tekst2 {
-        color: white;
-        font-size: 140%;
+        font-size: 80%;
     }
 
-    form {
-        margin-top: 5em;
+    p#tekst3 {
+        font-size: 80%;
     }
 
-
+    form#form1 {
+        margin-top: -0.5em;
+    }
 }
 
-@media (min-width: 83rem) {
+@media (min-width: 85rem) {
     form#form1 {
         display: none;
-    }
-
-    img.beroemd {
-        max-width: 50%;
-    }
-
-    form#form2 {
-        position: absolute;
-        top: 3em;
-        margin-left: 3em;
-        margin-bottom: 5em;
     }
 
     button#zoeken {
@@ -456,29 +504,165 @@ section#favoriet {
     }
 
     img#achtergrond {
-        margin-bottom: 10em;
+        display: none;
+    }
+
+    img#achtergrond2 {
+        width: 100%;
+        max-height: 20em;
+    }
+
+    form#form2 {
+        position: absolute;
+        top: 7.5em;
+        margin-left: 3em;
     }
 
     p#tekst1 {
         position: absolute;
-        top: 22em;
-        right: 3.2em;
+        top: 25rem;
+        left: 57rem;
+        font-size: 2rem;
+        min-width: 13em;
     }
 
     p#tekst2 {
         position: absolute;
-        top: 15em;
-        right: 2em;
+        top: 14rem;
+        left: 55rem;
+        min-width: 20em;
+        font-size: 1.5rem;
+    }
+
+    p#tekst3 {
+        position: absolute;
+        top: 22rem;
+        left: 60rem;
+        min-width: 13em;
+        font-size: 1.5rem;
+    }
+
+    p#tekst4 {
+        margin: -10em auto 0;
+        font-size: 2rem;
+        min-width: 13em;
+    }
+
+    p#tekst5 {
+        margin: 1em auto;
+        min-width: 20em;
+        font-size: 1.5rem;
+    }
+
+    p#tekst6 {
+        margin: 0 auto;
+        min-width: 13em;
+        font-size: 1.5rem;
+    }
+
+    p#offlinetekst {
+        margin-top: 5em;
+        font-size: 1.7rem;
+    }
+
+    section#artikelen {
+        margin-top: 7em;
+
+    }
+
+    button#zoeken {
+        margin-top: -8em;
+        margin-bottom: 1.5em;
     }
 
 }
 
-@media (max-width: 83rem) {
+@media (max-width: 85rem) {
+    img#achtergrond2 {
+        display: none;
+        min-width: 100%;
+    }
+
     form#form2 {
         display: none;
     }
 }
 
+@media (min-width: 105rem) {
+    form#form2 {
+        margin-left: 10%
+    }
 
+    p#tekst1 {
+        left: 65%;
+    }
+
+    p#tekst2 {
+        left: 63%;
+    }
+
+    p#tekst3 {
+        left: 67%;
+    }
+}
+
+@media (max-width: 20rem) {
+    img#foto2 {
+        display: none;
+    }
+    img#foto3 {
+        display: none;
+    }
+    section#beschrijving {
+        margin-left: 2%;
+    }
+}
+
+@media (min-width: 20rem) {
+    img#foto1 {
+        display: none;
+    }
+    img#foto3 {
+        display: none;
+    }
+
+    section#beschrijving {
+        margin-left: 2%;
+    }
+
+    body > nav > ul > li {
+        margin-right: 4%;
+    }
+
+    section > a {
+        width: 100rem;
+        height: 100rem;
+    }
+
+    section > a > img {
+        min-width: 109%;
+    }
+}
+
+@media (min-width: 60rem) {
+    img#foto1 {
+        display: none;
+    }
+    img#foto2 {
+        display: none;
+    }
+    img#foto3 {
+        display: block;
+    }
+    img.beroemd {
+        width: 60%;
+    }
+    section#beschrijving {
+        margin-left: 17%;
+    }
+    body > nav > ul > li {
+        margin-right: 20.5%;
+    }
+}
 
 
